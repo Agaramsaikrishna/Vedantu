@@ -1,110 +1,118 @@
-# Vedantu
+**VEDANTU******
+
 
 
 # 🎓 YouTube Automation for Educational Videos
 
-This project automates the generation of educational video scripts, metadata, and avatar-style videos using AI tools such as Together AI, HeyGen, and a user-friendly Streamlit UI.
+**Vedantu Automation Toolkit** is a smart, end-to-end system for generating educational video content using AI — from script to avatar-style video — with zero manual editing required.
 
-Perfect for teachers, YouTube creators, and EdTech startups who want to streamline the creation of curriculum-based educational videos.
-
----
-
-## ✨ Features
-
-- 📚 Generates video **topics**, **scripts**, and **YouTube metadata** (titles, tags, descriptions)
-- 🧠 Uses **LLMs** (like Together AI) for natural, curriculum-aligned text generation
-- 🎥 Integrates with **HeyGen API** to generate avatar videos from scripts
-- 💾 Automatically saves each output to a clean folder structure
-- 🖼️ Simple **Streamlit UI** for interaction — no coding needed
-- 🗂 Organized by `grade_subject_topic` for easy content management
+Whether you're an educator, content creator, or EdTech founder, this tool simplifies curriculum-based video creation using AI services like **Together AI**, **HeyGen**, and **Streamlit**.
 
 ---
 
-* Set up a virtual environment
-bash
-Copy
-Edit
+## 🚀 Key Features
+
+- ✅ **Curriculum-Aligned Topic Generation**
+- 🧠 **AI-Generated Scripts** using LLMs (e.g., Together AI)
+- 🎯 **Optimized YouTube Metadata** (title, tags, and description)
+- 🎥 **Avatar-Based Video Creation** using HeyGen API
+- 🖥️ **Streamlit UI** for easy, no-code use
+- 💾 **Automatic Saving** of generated assets
+- 📁 **Organized Output** based on subject and grade
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/vedantu-ai-automation.git
+cd vedantu-ai-automation
+```
+
+2. **Create Virtual Environment**
+
+```bash
 python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
+# Activate it:
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+```
 
+3. **Install Requirements**
 
-*Install dependencies
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
--
+```
 
-*Create .env file with your API keys
-ini
-Copy
-Edit
+4. **Add API Keys**
+
+Create a `.env` file in the root directory:
+
+```ini
 TOGETHER_API_KEY=your_together_api_key
 HEY_GEN_KEY_1=your_heygen_api_key
+```
 
+5. **Run the Streamlit App**
 
-*Run the Streamlit UI
-bash
-Copy
-Edit
+```bash
 streamlit run app.py
+```
 
+---
 
+## 🧠 Tech Stack
 
-📂 Example Output Structure
-bash
-Copy
-Edit
-outputs/
-└── 10_chemistry_chemical_bonding/
-    ├── script.txt         # Generated lesson script
-    ├── metadata.json      # Title, tags, description
-    └── video_info.txt     #
+| Tool / Library   | Role                                |
+|------------------|-------------------------------------|
+| **Streamlit**    | Web-based UI                        |
+| **Together AI**  | Natural language generation (LLM)   |
+| **HeyGen API**   | Avatar video generation             |
+| **Python**       | Backend scripting & logic           |
+| **dotenv**       | Environment config management       |
+| **requests**     | HTTP/API calls                      |
 
+---
 
-🧠 Tech Stack
-Tool / Lib	Role
-Streamlit	Web interface
-Together AI	Natural language generation
-HeyGen API	Avatar-based video generation
-Python	Backend scripting & automation
-dotenv, requests	Environment & HTTP calls
+## 🧪 Evaluation Criteria
 
+| Category         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Functionality**| End-to-end pipeline (topic → script → metadata → video)                     |
+| **Content Quality**| Aligned with curriculum; editable scripts possible                         |
+| **Automation Depth**| Fully automated pipeline, minimal manual steps                            |
+| **Code Quality** | Modular, documented, and logged                                            |
+| **Relevance**    | Focused on YouTube content creation & engagement                            |
+| **UI/UX**        | Simple interface for teachers and creators                                  |
 
+---
 
+## 🔮 Future Improvements
 
-🔮 Future Improvements
-Here are upcoming enhancements and ideas for future development:
+### 🧱 Core Enhancements
 
-🌟 Core Functionality
- Direct YouTube Upload via YouTube Data API
+- 🔗 Direct **YouTube upload** (via YouTube Data API)
+- 🌐 Support for **multi-language** content generation
+- ✏️ **Edit script before video** generation (WYSIWYG editor)
+- 🎙️ UI selection for **voice/avatar style**
+- 🔁 Retry system for video generation failures
 
- Add support for more subjects and languages
+### 💡 User Experience
 
- Allow custom script editing before video generation
+- 📥 Add **download buttons** for script/metadata/video
+- ▶️ **Embed video preview** inside Streamlit app
+- ⏱️ Display **API usage quota warnings**
+- 📂 Save **session history** for easy reuse
+- 📱 Responsive layout for mobile/tablet devices
 
- Implement voice/style selection options in UI
+### 📊 Admin & Analytics
 
- Multi-step retry logic for failed video generations
+- 📈 Track generation stats (e.g., most requested topics)
+- 📤 Export **PDF lesson plans**
+- 🔍 Monitor and log **error rates** & retry logic
 
-
-
-
- 💡 User Experience
- Add download buttons for script, metadata, and video
-
- Embed video preview directly in the Streamlit UI
-
- Show API usage quota warnings (e.g., HeyGen limits)
-
- Save session history and allow reusing previous results
-
- Responsive design for mobile/tablet support
-
-📊 Admin & Analytics
- Track and log generation stats (topic popularity, success/fail rate)
-
- Export content as PDF lesson plans
-
- Integration with Google Classroom or LMS
-
+---
