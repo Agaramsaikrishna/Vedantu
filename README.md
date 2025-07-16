@@ -27,7 +27,7 @@ Whether you're an educator, content creator, or EdTech founder, this tool simpli
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/vedantu-ai-automation.git
+git clone https://github.com/Agaramsaikrishna/vedantu-ai-automation.git
 cd vedantu-ai-automation
 ```
 
