@@ -76,7 +76,90 @@ streamlit run app.py
 | **dotenv**       | Environment config management       |
 | **requests**     | HTTP/API calls                      |
 
+
+
+
 ---
+
+
+
+
+
+System Capabilities
+✅ Key Automation Modules:
+Module	Description
+📈 Trend Finder	Scrapes YouTube and Google Trends based on grade/subject
+🧠 Topic Selector	Uses curriculum + SEO signals to prioritize topics
+✍️ Script Generator	LLM (Together AI) to generate grade-appropriate scripts
+📝 Metadata Generator	Optimizes title, tags, and description using AI
+🎥 Video Generator	Uses HeyGen to create avatar-led educational videos
+📁 Asset Organizer	Outputs structured folders for each video
+💻 Streamlit UI	Enables non-tech users (teachers, editors) to run the tool
+
+
+
+Architecture Diagram
+```
++------------------+
+| Trend Finder     | <----- YouTube Search + Google Trends
++--------+---------+
+				 |
+				 v
++--------+---------+
+| Topic Selector   | <---- Curriculum + Engagement Data
++--------+---------+
+				 |
+				 v
++--------+---------+
+| Script Generator | <---- Together AI LLM
++--------+---------+
+				 |
+				 v
++--------+----------+
+| Metadata Builder  | <---- SEO keywords + LLM prompts
++--------+----------+
+				 |
+				 v
++--------+----------+
+| Video Generator   | <---- HeyGen API (Avatar + Voiceover)
++--------+----------+
+				 |
+				 v
++--------+----------+
+| Streamlit UI      | <---- Run end-to-end in 1 click
++-------------------+
+
+```
+
+Problem Solved & Why It Matters
+ 
+  Creating high-quality educational YouTube videos at scale is labor-intensive and dependent on Master Teachers. Vedantu publishes 1,000+ videos monthly across 25+ channels and has over 650M+ cumulative views—but scaling this further requires automation.
+
+ This tool automates the entire video production pipeline, from identifying trending educational topics to generating scripts, metadata, and avatar-led videos. It ensures:
+
+-Higher throughput of video content
+
+-Consistent educational quality
+
+-Reduced human effort
+
+-Data-backed decisions on what to publish
+
+-This matters because scaling high-quality content cost-effectively directly impacts engagement, reach, and lead generation.
+
+
+DEMO 
+
+
+
+https://github.com/user-attachments/assets/b177740e-fc63-4020-938b-194159eeb3f3
+
+
+https://github.com/Agaramsaikrishna/Vedantu/raw/refs/heads/main/videos/Chemistry.mp4
+
+
+
+
 
 ## 🧪 Evaluation Criteria
 
@@ -97,7 +180,7 @@ streamlit run app.py
 
 - 🔗 Direct **YouTube upload** (via YouTube Data API)
 - 🌐 Support for **multi-language** content generation
-- ✏️ **Edit script before video** generation (WYSIWYG editor)
+- ✏️ **Edit script before video** generation 
 - 🎙️ UI selection for **voice/avatar style**
 - 🔁 Retry system for video generation failures
 
@@ -116,13 +199,3 @@ streamlit run app.py
 - 🔍 Monitor and log **error rates** & retry logic
 
 ---
-
-
-DEMO 
-
-
-
-https://github.com/user-attachments/assets/b177740e-fc63-4020-938b-194159eeb3f3
-
-
-https://github.com/Agaramsaikrishna/Vedantu/raw/refs/heads/main/videos/Chemistry.mp4
