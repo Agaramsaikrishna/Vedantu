@@ -116,3 +116,13 @@ streamlit run app.py
 - 🔍 Monitor and log **error rates** & retry logic
 
 ---
+
+
+DEMO 
+
+
+
+https://github.com/user-attachments/assets/b177740e-fc63-4020-938b-194159eeb3f3
+
+
+https://github.com/Agaramsaikrishna/Vedantu/raw/refs/heads/main/videos/Chemistry.mp4
